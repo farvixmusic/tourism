@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Мій магазин</h1>
+        <nav>
+            <ul>
+                <li><a href="#products">Товари</a></li>
+                <li><a href="#cart">Кошик</a></li>
+                <li><a href="index2.html"> Туристичні місця </a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      
+    <section id="products">
+        <h2>Наші товари</h2>
+        <div class="product" style="width: 18rem;" data-name="Туристичний намет" data-price="8184">
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTR63pNITbD47QN7s1CH-7I6zh1UBtxezV6qxmO8jv05EE63hFoaJSG2mkzC4uJWk4S5DnOvz1kG8oQG8-igdpCVV_VVKRFZJ9swkMBowA&usqp=CAE">
+            <div class="card-body">
+              <h5 class="card-title">Туристичний намет</h5>
+              <p class="card-text">Naturehike Star River UL Надлегкий туристичний намет Тандем Відкритий кемпінгове спорядження Нічний кемпінговий намет</p>
+              <a href="#" class="btn btn-primary">Перейти</a>
+              <p>Ціна: 8184 грн</p>
+              <button class="add-to-cart">Додати в кошик</button>
+            </div>
+          </div>
+        <div class="product" style="width: 18rem;" data-name="Спальний мішок" data-price="790">
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTHjoA8j_f-Oa4hpCPfyQx0PVOwRaZeahL79IVz2ZdaNVxyuI83gbQchHFQnl5MpomL4QKpZ5keTlgVIMAhbrvXnmcemkszJ4A1yUETE125RgDZmPowulvG&usqp=CAE">
+            <div class="card-body">
+              <h5 class="card-title">Спальний мішок</h5>
+              <p class="card-text">Відновлення під час сну забезпечить спальний мішок Bjorn, який є невід’ємною частиною спорядження туристів, що відпочивають у кемпінгу</p>
+              <a href="#" class="btn btn-primary">Перейти</a>
+              <p>Ціна: 790 грн</p>
+              <button type="button" class="add-to-cart">Додати в кошик</button>
+            </div>
+          </div>
+          <div class="product" style="width: 18rem;" data-name="Туристичний рюкзак" data-price="3560">
+            <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQph9MSnE4UhdjQmLiA9BMO4ZUXBCm0R6sPEcES-mccLXzQ5tYiZo52-CmyXr2ytXbGIq0e04TspgEsVJnI_R1M4UN5GIju1hYO4-A96VTxKbegWgdw3NHk&usqp=CAE">
+            <div class="Туристичний рюкзак">
+              <h5 class="card-title">Туристичний рюкзак</h5>
+              <p class="card-text">Туристичний рюкзак Terra Incognita Action на 45л ti-621 Опис товару: Підвісна система 3D EVS повністю вентильована спина анатомічна конструкція вентильованих плечових лямок.</p>
+              <a href="#" class="btn btn-primary">Перейти</a>
+              <p>Ціна: 3560 грн</p>
+              <button type="button" class="add-to-cart">Додати в кошик</button>
+            </div>
+          </div>
+    </section>
+
+    <section id="cart">
+        <h2>Кошик</h2>
+        <ul id="cart-items"></ul>
+        <p><b>Загальна сума:</b> <span id="total-price">0</span> грн</p>
+        <button id="checkout">Оформити замовлення</button>
+    </section>
+
+
+    <footer>
+        <p>© 2025 Мій Магазин. Усі права захищені.</p>
+    </footer>
+</body>
+</html>
